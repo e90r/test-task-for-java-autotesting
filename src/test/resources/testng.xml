@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite">
+    <test name="tests.RestAPITest">
+    <parameter name="name" value="TestUser"/>
+    <parameter name="job" value="QA Automation Engineer"/>
+    <parameter name="newJob" value="Senior QA Automation Engineer"/>
+        <classes>
+            <class name="tests.RestAPITest">
+                <methods>
+                    <include name="testCreateUser"/>
+                    <include name="testUpdateUser"/>
+                    <include name="testDeleteUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
